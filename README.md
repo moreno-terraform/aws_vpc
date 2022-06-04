@@ -19,7 +19,7 @@ locals {
   pub_subnets_cidr_block = ["10.100.200.0/22", "10.100.204.0/22"]
 }
 module "vpc" {
-  source = "git::https://github.com/moreno-terraform/aws_vpc.git"
+  source = "git::https://github.com/moreno-terraform/aws_vpc.git?ref=1.0"
   vpc_name = local.vpc_name
   vpc_cidr_block = local.vpc_cidr_block
   app_subnets_cidr_block = local.app_subnets_cidr_block
